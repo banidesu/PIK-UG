@@ -15,7 +15,52 @@
     <link href="css/style.css" rel="stylesheet">
 
     <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <style type="text/css">
+        body,
+        div,
+        table,
+        thead,
+        tbody,
+        tfoot,
+        tr,
+        th,
+        td,
+        p {
+            font-family: "Calibri";
+            font-size: x-small
+        }
 
+        a.comment-indicator:hover+comment {
+            background: #ffd;
+            position: absolute;
+            display: block;
+            border: 1px solid black;
+            padding: 0.5em;
+        }
+
+        a.comment-indicator {
+            background: red;
+            display: inline-block;
+            border: 1px solid black;
+            width: 0.5em;
+            height: 0.5em;
+        }
+
+        comment {
+            display: none;
+        }
+
+        .sorttable_sorted,
+        .sorttable_sorted_reverse,
+        table.sortable thead td:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort) {
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        table.sortable thead td:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
+            content: " \25B4\25BE";
+        }
+    </style>
 </head>
 
 <body>
@@ -557,21 +602,26 @@
                                                 disabled></div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">KEBUTUHAN</label>
-                                        <div class="col-sm-10"><input type="number" class="form-control" value="1"></div>
+                                        <div class="col-sm-10"><input type="number" class="form-control" value="1">
+                                        </div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">KETERSEDIAAN</label>
-                                        <div class="col-sm-10"><input type="number" class="form-control" value="0"></div>
+                                        <div class="col-sm-10"><input type="number" class="form-control" value="0">
+                                        </div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">SELISIH (+/-)</label>
-                                        <div class="col-sm-10"><input disabled type="number" class="form-control" value="1"></div>
+                                        <div class="col-sm-10"><input disabled type="number" class="form-control"
+                                                value="1"></div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">HARGA SATUAN
                                             (x Rp.1000)</label>
-                                        <div class="col-sm-10"><input type="number" class="form-control" value="200.000"></div>
+                                        <div class="col-sm-10"><input type="number" class="form-control"
+                                                value="200.000"></div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">KEBUTUHAN BIAYA
                                             (x Rp.1000)</label>
-                                        <div class="col-sm-10"><input disabled type="number" class="form-control" value="200.000"></div>
+                                        <div class="col-sm-10"><input disabled type="number" class="form-control"
+                                                value="200.000"></div>
                                     </div>
 
 
@@ -589,6 +639,522 @@
                                         </div>
                                     </div>
                                 </form>
+                            </div>
+                        </div>
+
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-content">
+                                <div style="overflow-x:auto;">
+                                    <table id="21a" cellspacing="0" border="0" class="table">
+                                        <colgroup width="64"></colgroup>
+                                        <colgroup width="243"></colgroup>
+                                        <colgroup width="236"></colgroup>
+                                        <colgroup width="244"></colgroup>
+                                        <colgroup width="161"></colgroup>
+                                        <colgroup width="95"></colgroup>
+                                        <colgroup width="91"></colgroup>
+                                        <colgroup width="114"></colgroup>
+                                        <colgroup width="128"></colgroup>
+                                        <colgroup width="99"></colgroup>
+                                        <colgroup span="2" width="126"></colgroup>
+                                        <tr>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                height="98" align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">NO</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">JENIS PELAYANAN DASAR</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">SUB KEGIATAN</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">KOMPONEN PENGHITUNGAN KEBUTUHAN
+                                                        SPM SUB-URUSAN BENCANA</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">SASARAN PENERIMA SPM SUB-URUSAN
+                                                        BENCANA</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">KELUARAN</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">SATUAN</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">KEBUTUHAN</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">KETERSEDIAAN</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">SELISIH (+/-)</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><b>
+                                                    <font face="Arial" color="#000000"> HARGA SATUAN<br>(x Rp.1000)
+                                                    </font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">KEBUTUHAN BIAYA<br>(x Rp.1000)
+                                                    </font>
+                                                </b></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                height="35" align="center" valign=middle bgcolor="#EDEDED" sdval="1"
+                                                sdnum="1033;"><i>
+                                                    <font face="Arial" color="#000000">1</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="2" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">2</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="3" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">3</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="4" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">4</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="5" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">5</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="6" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">6</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="7" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">7</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="8" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">8</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="9" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">9</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><i>
+                                                    <font face="Arial" color="#000000">10 = 8 - 9</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="11" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">11</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><i>
+                                                    <font face="Arial" color="#000000">12 = 10 x 11</font>
+                                                </i></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=3 height="176" align="center" valign=top>
+                                                <font face="Arial" color="#000000">1.</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=3 align="left" valign=top>
+                                                <font face="Arial" color="#000000">PELAYANAN INFORMASI RAWAN BENCANA
+                                                </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=3 align="left" valign=top>
+                                                <font face="Arial" color="#000000">PENYUSUNAN KAJIAN RISIKO BENCANA
+                                                </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Penyediaan tenaga ahli yang kompeten
+                                                    dalam penyusunan KRB</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">BPBD</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Dokumen KRB</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000">Paket</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="0" sdnum="1033;">
+                                                <font face="Arial" color="#000000">0</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="0"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> - </font>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="left" valign=top>
+                                                <font face="Arial" color="#000000">Diksusi Publik terhadap dokumen KRB
+                                                    yang telah disusun untuk disempurnakan dan ditetapkan menjadi
+                                                    dokumen yang sah/legal</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="left" valign=top>
+                                                <font face="Arial" color="#000000">BPBD</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Legalitas Dokumen KRBa</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000">Paket</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="0" sdnum="1033;">
+                                                <font face="Arial" color="#000000">0</font>
+                                            </td>
+                                            <td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="0"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> - </font>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Laporan Efektivitas Pemanfaatan KRB
+                                                </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000">Paket</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="0" sdnum="1033;">
+                                                <font face="Arial" color="#000000">0</font>
+                                            </td>
+                                            <td style="border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="0"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> - </font>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=6 height="405" align="center" valign=top>
+                                                <font face="Arial" color="#000000">2.</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=6 align="left" valign=top>
+                                                <font face="Arial" color="#000000">PELAYANAN PENCEGAHAN DAN
+                                                    KESIAPSIAGAAN TERHADAP BENCANA</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=3 align="left" valign=top>
+                                                <font face="Arial" color="#000000">PENYUSUNAN RENCANA PENANGGULANGAN
+                                                    BENCANA</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Penyediaan Tenaga Ahli yang Kompeten
+                                                    dalam Penyusunan Dokumen RPB</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">BPBD</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Dokumen RPB</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000">Paket</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="0" sdnum="1033;">
+                                                <font face="Arial" color="#000000">0</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="0"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> - </font>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="left" valign=top>
+                                                <font face="Arial" color="#000000">Diskusi Publik terhadap dokumen RPB
+                                                    yang sudah disusun untuk disempurnakan dan ditetapkan menjadi
+                                                    dokumen yang sah/legal</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="left" valign=top>
+                                                <font face="Arial" color="#000000">BPBD</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Legalitas Dokumen RPB</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000">Paket</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="0" sdnum="1033;">
+                                                <font face="Arial" color="#000000">0</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="0"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> - </font>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Laporan Efektivitas Pemanfaatan RPB
+                                                </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000">Paket</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="0" sdnum="1033;">
+                                                <font face="Arial" color="#000000">0</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="0"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> - </font>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=3 align="left" valign=top>
+                                                <font face="Arial" color="#000000">PEMBUATAN RENCANA KONTINJENSI
+                                                    (RENKON)</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Penyediaan Tenaga Ahli yang Kompeten
+                                                    dalam Penyusunan Dokumen Rencana Kontinjensi</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">BPBD</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Dokumen Renkon</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000">Paket</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="1" sdnum="1033;">
+                                                <font face="Arial" color="#000000">1</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="0" sdnum="1033;">
+                                                <font face="Arial" color="#000000">0</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="1" sdnum="1033;">
+                                                <font face="Arial" color="#000000">1</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="200000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 200,000 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="200000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 200,000 </font>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="left" valign=top>
+                                                <font face="Arial" color="#000000">Diskusi Publik terhadap Dokumen
+                                                    Rencana Kontinjensi yang sudah disusun untuk disempurnakan dan
+                                                    ditetapkan menjadi dokumen yang sah/legal</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="left" valign=top>
+                                                <font face="Arial" color="#000000">BPBD</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Legalitas Dokumen Renkon</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000">Paket</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="1" sdnum="1033;">
+                                                <font face="Arial" color="#000000">1</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="0" sdnum="1033;">
+                                                <font face="Arial" color="#000000">0</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="1" sdnum="1033;">
+                                                <font face="Arial" color="#000000">1</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="50000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 50,000 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="50000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 50,000 </font>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Laporan Efektivitas Pemanfaatan
+                                                    Renkon</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top>
+                                                <font face="Arial" color="#000000">Paket</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="4" sdnum="1033;">
+                                                <font face="Arial" color="#000000">4</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="0" sdnum="1033;">
+                                                <font face="Arial" color="#000000">0</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="4" sdnum="1033;">
+                                                <font face="Arial" color="#000000">4</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="0.02"
+                                                sdnum="1033;0;_(* #,##0.00_);_(* \(#,##0.00\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 0.02 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=top sdval="0.08"
+                                                sdnum="1033;0;_(* #,##0.00_);_(* \(#,##0.00\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 0.08 </font>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
