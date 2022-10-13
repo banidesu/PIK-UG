@@ -16,57 +16,18 @@
 
     <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
     <style type="text/css">
-        body,
-        div,
-        table,
-        thead,
-        tbody,
-        tfoot,
-        tr,
-        th,
-        td,
-        p {
-            font-family: "Calibri";
-            font-size: x-small
-        }
-
-        a.comment-indicator:hover+comment {
-            background: #ffd;
-            position: absolute;
-            display: block;
-            border: 1px solid black;
-            padding: 0.5em;
-        }
-
-        a.comment-indicator {
-            background: red;
-            display: inline-block;
-            border: 1px solid black;
-            width: 0.5em;
-            height: 0.5em;
-        }
-
-        comment {
-            display: none;
-        }
-
-        .sorttable_sorted,
-        .sorttable_sorted_reverse,
-        table.sortable thead td:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort) {
-            white-space: nowrap;
-            cursor: pointer;
-        }
-
-        table.sortable thead td:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
-            content: " \25B4\25BE";
-        }
-    </style>
+		body,div,table,thead,tbody,tfoot,tr,th,td,p { font-family:"Calibri"; font-size:x-small }
+		a.comment-indicator:hover + comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em;  } 
+		a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em;  } 
+		comment { display:none;  } 
+		.sorttable_sorted,.sorttable_sorted_reverse,table.sortable thead td:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort) { white-space: nowrap; cursor: pointer; }
+		table.sortable thead td:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { content:" \25B4\25BE"; }
+	</style>
 </head>
 
 <body>
 
     <div id="wrapper">
-
         <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
@@ -92,15 +53,8 @@
                         </div>
                     </li>
                     <li>
-                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span>
+                        <a href="dashboard_sima.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span>
                             <span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="index.html">Dashboard v.1</a></li>
-                            <li><a href="dashboard_2.html">Dashboard v.2</a></li>
-                            <li><a href="dashboard_3.html">Dashboard v.3</a></li>
-                            <li><a href="dashboard_4_1.html">Dashboard v.4</a></li>
-                            <li><a href="dashboard_5.html">Dashboard v.5 </a></li>
-                        </ul>
                     </li>
 
                     <li>

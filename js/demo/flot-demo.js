@@ -102,21 +102,29 @@ $(function() {
 $(function() {
 
     var data = [{
-        label: "Sales 1",
+        label: "PNS",
         data: 21,
         color: "#d3d3d3",
     }, {
-        label: "Sales 2",
+        label: "TNI",
         data: 3,
         color: "#bababa",
     }, {
-        label: "Sales 3",
+        label: "POLRI",
         data: 15,
         color: "#79d2c0",
     }, {
-        label: "Sales 4",
+        label: "SATLINMAS",
         data: 52,
         color: "#1ab394",
+    }, {
+        label: "Tenaga Kontrak",
+        data: 21,
+        color: "#d3d3d3",
+    },  {
+        label: "Non Aparatur",
+        data: 21,
+        color: "#d3d3d3",
     }];
 
     var plotObj = $.plot($("#flot-pie-chart"), data, {
