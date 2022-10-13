@@ -16,13 +16,51 @@
 
     <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
     <style type="text/css">
-		body,div,table,thead,tbody,tfoot,tr,th,td,p { font-family:"Calibri"; font-size:x-small }
-		a.comment-indicator:hover + comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em;  } 
-		a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em;  } 
-		comment { display:none;  } 
-		.sorttable_sorted,.sorttable_sorted_reverse,table.sortable thead td:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort) { white-space: nowrap; cursor: pointer; }
-		table.sortable thead td:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { content:" \25B4\25BE"; }
-	</style>
+        body,
+        div,
+        table,
+        thead,
+        tbody,
+        tfoot,
+        tr,
+        th,
+        td,
+        p {
+            font-family: "Calibri";
+            font-size: x-small
+        }
+
+        a.comment-indicator:hover+comment {
+            background: #ffd;
+            position: absolute;
+            display: block;
+            border: 1px solid black;
+            padding: 0.5em;
+        }
+
+        a.comment-indicator {
+            background: red;
+            display: inline-block;
+            border: 1px solid black;
+            width: 0.5em;
+            height: 0.5em;
+        }
+
+        comment {
+            display: none;
+        }
+
+        .sorttable_sorted,
+        .sorttable_sorted_reverse,
+        table.sortable thead td:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort) {
+            white-space: nowrap;
+            cursor: pointer;
+        }
+
+        table.sortable thead td:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
+            content: " \25B4\25BE";
+        }
+    </style>
 </head>
 
 <body>
@@ -37,9 +75,10 @@
                                 <img alt="image" class="img-circle" src="img/profile_small.jpg" />
                             </span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Sugeng Warsono</strong>
-                                    </span> <span class="text-muted text-xs block">Staff Administrasi BPBD DKI Jakarta <b
-                                            class="caret"></b></span> </span> </a>
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Sugeng
+                                            Warsono</strong>
+                                    </span> <span class="text-muted text-xs block">Staff Administrasi BPBD DKI Jakarta
+                                        <b class="caret"></b></span> </span> </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
                                 <li><a href="profile.html">Profile</a></li>
                                 <li><a href="contacts.html">Contacts</a></li>
@@ -71,8 +110,12 @@
                             <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">Miscellaneous</span><span
                                     class="label label-warning pull-right">NEW</span></a>
                             <li><a href="1.1A.html">1.1A</a></li>
+                            <li><a href="1.1B.html">1.1B</a></li>
+                            <li><a href="1.1C.html">1.1C</a></li>
                             <li><a href="1.1D.html">1.1D</a></li>
                             <li><a href="1.1E.html">1.1E</a></li>
+                            <li><a href="1.2A.html">1.2A</a></li>
+                            <li><a href="1.2B.html">1.2B</a></li>
                             <li><a href="1.2C.html">1.2C</a></li>
                             <li><a href="1.2D.html">1.2D</a></li>
                             <li><a href="1.2E.html">1.2E</a></li>
@@ -258,7 +301,7 @@
                 </nav>
             </div>
 
-            <center><img alt="image"src="img/SIMA-header.png"></center>
+            <center><img alt="image" src="img/SIMA-header.png"></center>
 
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
@@ -524,7 +567,8 @@
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">SASARAN PENERIMA SPM
                                             SUB-URUSAN BENCANA</label>
-                                        <div class="col-sm-10"><input type="text" class="form-control" value="BPBD" disabled></div>
+                                        <div class="col-sm-10"><input type="text" class="form-control" value="BPBD"
+                                                disabled></div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">KELUARAN</label>
                                         <div class="col-sm-10">
@@ -560,82 +604,98 @@
                                         </div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">SATUAN</label>
-                                        <div class="col-sm-10"><input type="text" class="form-control" value="PAKET" disabled></div>
+                                        <div class="col-sm-10"><input type="text" class="form-control" value="PAKET"
+                                                disabled></div>
                                     </div>
                                     <div class="hr-line-dashed"></div>
                                     <div class="form-group"><label class="col-sm-2 control-label">TARGET
                                             (VOLUME)</label>
-                                        <div class="col-sm-10"><input type="number" class="form-control" value="1"></div>
+                                        <div class="col-sm-10"><input type="number" class="form-control" value="1">
+                                        </div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">TARGET BIAYA
                                             (xRp.1000)
                                         </label>
-                                        <div class="col-sm-10"><input type="number" class="form-control" value="200000"></div>
+                                        <div class="col-sm-10"><input type="number" class="form-control" value="200000">
+                                        </div>
                                     </div>
                                     <div class="hr-line-dashed"></div>
                                     <div class="form-group"><label class="col-sm-2 control-label">REALISASI
                                             (VOLUME)</label>
-                                        <div class="col-sm-10"><input type="number" class="form-control" value="1"></div>
+                                        <div class="col-sm-10"><input type="number" class="form-control" value="1">
+                                        </div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">REALISASI BIAYA
                                             (xRp.1000)
                                         </label>
-                                        <div class="col-sm-10"><input type="number" class="form-control" value="190000"></div>
+                                        <div class="col-sm-10"><input type="number" class="form-control" value="190000">
+                                        </div>
                                     </div>
                                     <div class="hr-line-dashed"></div>
-                                    <div class="form-group"><label class="col-sm-2 control-label">CAPAIAN 
+                                    <div class="form-group"><label class="col-sm-2 control-label">CAPAIAN
                                             (FISIK (%))</label>
-                                        <div class="col-sm-10"><input type="text" class="form-control" value="100%"></div>
+                                        <div class="col-sm-10"><input type="text" class="form-control" value="100%">
+                                        </div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">CAPAIAN (KEUANGAN (%))
                                         </label>
-                                        <div class="col-sm-10"><input type="text" class="form-control" value="95%"></div>
+                                        <div class="col-sm-10"><input type="text" class="form-control" value="95%">
+                                        </div>
                                     </div>
                                     <div class="hr-line-dashed"></div>
                                     <div class="form-group"><label class="col-sm-2 control-label">CAPAIAN MUTU LAYANAN
                                             (%)
                                         </label>
-                                        <div class="col-sm-10"><input disabled type="text" class="form-control" value="100%"></div>
+                                        <div class="col-sm-10"><input disabled type="text" class="form-control"
+                                                value="100%"></div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">BOBOT KEPENTINGAN (%)
                                         </label>
-                                        <div class="col-sm-10"><input disabled type="text" class="form-control" value="40%"></div>
+                                        <div class="col-sm-10"><input disabled type="text" class="form-control"
+                                                value="40%"></div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">PROGRES KINERJA SPM
                                             (PROGRES KINERJA BERJALAN
                                             (%))</label>
-                                        <div class="col-sm-10"><input disabled type="text" class="form-control" value="98%"></div>
+                                        <div class="col-sm-10"><input disabled type="text" class="form-control"
+                                                value="98%"></div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">PROGRES KINERJA
                                             SPM(TOTAL PROGRES KINERJA SUB KEGIATAN BERJALAN (%))
                                         </label>
-                                        <div class="col-sm-10"><input disabled type="text" class="form-control" value="97%"></div>
+                                        <div class="col-sm-10"><input disabled type="text" class="form-control"
+                                                value="97%"></div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">PROGRES CAPAIAN SPM
                                             (PROGRES CAPAIAN BERJALAN
                                             (%))</label>
-                                        <div class="col-sm-10"><input disabled type="text" class="form-control" value="100%"></div>
+                                        <div class="col-sm-10"><input disabled type="text" class="form-control"
+                                                value="100%"></div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">PROGRES CAPAIAN SPM
                                             (TOTAL PROGRES CAPAIAN SUB KEGIATAN BERJALAN (%))
                                         </label>
-                                        <div class="col-sm-10"><input disabled type="text" class="form-control" value="100%"></div>
+                                        <div class="col-sm-10"><input disabled type="text" class="form-control"
+                                                value="100%"></div>
                                     </div>
                                     <div class="hr-line-dashed"></div>
                                     <div class="form-group"><label class="col-sm-2 control-label">SUMBER DANA</label>
-                                        <div class="col-sm-10"><input type="text" class="form-control" value="APBD"></div>
+                                        <div class="col-sm-10"><input type="text" class="form-control" value="APBD">
+                                        </div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">PERMASALAHAN</label>
-                                        <div class="col-sm-10"><input type="text" class="form-control" value="Belum Ada"></div>
+                                        <div class="col-sm-10"><input type="text" class="form-control"
+                                                value="Belum Ada"></div>
                                     </div>
                                     <div class="form-group"><label class="col-sm-2 control-label">SOLUSI</label>
-                                        <div class="col-sm-10"><input type="text" class="form-control" value="Belum Ada"></div>
+                                        <div class="col-sm-10"><input type="text" class="form-control"
+                                                value="Belum Ada"></div>
                                     </div>
 
                                 </form>
                             </div>
                         </div>
-                        
+
                         <div class="ibox float-e-margins">
 
                             <div class="ibox-content">
@@ -670,237 +730,982 @@
                                         <colgroup width="159"></colgroup>
                                         <colgroup width="193"></colgroup>
                                         <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 height="90" align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">NO</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">JENIS PELAYANAN DASAR</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">SUB KEGIATAN</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">KOMPONEN PENGHITUNGAN KEBUTUHAN SPM SUB-URUSAN BENCANA</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">SASARAN PENERIMA SPM SUB-URUSAN BENCANA</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">KELUARAN</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">SATUAN</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">TARGET</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">REALISASI</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">CAPAIAN (%)</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle bgcolor="#FF0000"><b><font face="Arial" color="#000000">CAPAIAN MUTU LAYANAN (%)</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">BOBOT KEPENTINGAN (%)</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom bgcolor="#EDEDED"><b><font face="Arial" color="#000000">PROGRES KINERJA SPM (%)</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" colspan=2 align="center" valign=bottom bgcolor="#EDEDED"><b><font face="Arial" color="#000000">PROGRES CAPAIAN SPM (%)</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">SUMBER DANA</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">PERMASALAHAN</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">SOLUSI</font></b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 height="90" align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">NO</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">JENIS PELAYANAN DASAR</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">SUB KEGIATAN</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">KOMPONEN PENGHITUNGAN KEBUTUHAN
+                                                        SPM SUB-URUSAN BENCANA</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">SASARAN PENERIMA SPM SUB-URUSAN
+                                                        BENCANA</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">KELUARAN</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">SATUAN</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                colspan=2 align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">TARGET</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                colspan=2 align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">REALISASI</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                colspan=2 align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">CAPAIAN (%)</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="center" valign=middle bgcolor="#FF0000"><b>
+                                                    <font face="Arial" color="#000000">CAPAIAN MUTU LAYANAN (%)</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">BOBOT KEPENTINGAN (%)</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                colspan=2 align="center" valign=bottom bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">PROGRES KINERJA SPM (%)</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                colspan=2 align="center" valign=bottom bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">PROGRES CAPAIAN SPM (%)</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">SUMBER DANA</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">PERMASALAHAN</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">SOLUSI</font>
+                                                </b></td>
                                         </tr>
                                         <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">VOLUME</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED" sdnum="1033;0;_(\$* #,##0_);_(\$* \(#,##0\);_(\$* -_);_(@_)"><b><font face="Arial" color="#000000"> BIAYA (xRp.1000) </font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">VOLUME</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED" sdnum="1033;0;_(\$* #,##0_);_(\$* \(#,##0\);_(\$* -_);_(@_)"><b><font face="Arial" color="#000000"> BIAYA (xRp.1000) </font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">FISIK</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">KEUANGAN</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">PROGRES KINERJA BERJALAN<br>(%)</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">TOTAL PROGRES KINERJA SUB KEGIATAN BERJALAN (%)</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">PROGRES  CAPAIAN BERJALAN<br>(%)</font></b></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED"><b><font face="Arial" color="#000000">TOTAL PROGRES CAPAIAN SUB KEGIATAN BERJALAN (%)</font></b></td>
-                                            </tr>
-                                        <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" height="19" align="center" valign=middle bgcolor="#EDEDED" sdval="1" sdnum="1033;"><i><font face="Arial" color="#000000">1</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED" sdval="2" sdnum="1033;"><i><font face="Arial" color="#000000">2</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED" sdval="3" sdnum="1033;"><i><font face="Arial" color="#000000">3</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED" sdval="4" sdnum="1033;"><i><font face="Arial" color="#000000">4</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED" sdval="5" sdnum="1033;"><i><font face="Arial" color="#000000">5</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED" sdval="6" sdnum="1033;"><i><font face="Arial" color="#000000">6</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED" sdval="7" sdnum="1033;"><i><font face="Arial" color="#000000">7</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED" sdval="8" sdnum="1033;"><i><font face="Arial" color="#000000">8</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED" sdval="9" sdnum="1033;"><i><font face="Arial" color="#000000">9</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED" sdval="10" sdnum="1033;"><i><font face="Arial" color="#000000">10</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED" sdval="11" sdnum="1033;"><i><font face="Arial" color="#000000">11</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED" sdval="12" sdnum="1033;"><i><font face="Arial" color="#000000">12</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED" sdval="13" sdnum="1033;"><i><font face="Arial" color="#000000">13</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#FF0000" sdval="14" sdnum="1033;"><i><font face="Arial" color="#000000">14</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED" sdval="15" sdnum="1033;"><i><font face="Arial" color="#000000">15</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED"><i><font face="Arial" color="#000000">16 = &#7818;(12+13+14)</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED"><i><font face="Arial" color="#000000">17 = &#425;(15x16)</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED"><i><font face="Arial" color="#000000">18 =&#7818;(12+14)</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED"><i><font face="Arial" color="#000000">19 = &#425;(15x18)</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED" sdval="20" sdnum="1033;"><i><font face="Arial" color="#000000">20</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED" sdval="21" sdnum="1033;"><i><font face="Arial" color="#000000">21</font></i></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#EDEDED" sdval="22" sdnum="1033;"><i><font face="Arial" color="#000000">22</font></i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">VOLUME</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"
+                                                sdnum="1033;0;_(\$* #,##0_);_(\$* \(#,##0\);_(\$* -_);_(@_)"><b>
+                                                    <font face="Arial" color="#000000"> BIAYA (xRp.1000) </font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">VOLUME</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"
+                                                sdnum="1033;0;_(\$* #,##0_);_(\$* \(#,##0\);_(\$* -_);_(@_)"><b>
+                                                    <font face="Arial" color="#000000"> BIAYA (xRp.1000) </font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">FISIK</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">KEUANGAN</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">PROGRES KINERJA BERJALAN<br>(%)
+                                                    </font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">TOTAL PROGRES KINERJA SUB
+                                                        KEGIATAN BERJALAN (%)</font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">PROGRES CAPAIAN BERJALAN<br>(%)
+                                                    </font>
+                                                </b></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><b>
+                                                    <font face="Arial" color="#000000">TOTAL PROGRES CAPAIAN SUB
+                                                        KEGIATAN BERJALAN (%)</font>
+                                                </b></td>
                                         </tr>
                                         <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 height="90" align="center" valign=top><font face="Arial" color="#000000">1.</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="left" valign=top><font face="Arial" color="#000000">PELAYANAN INFORMASI RAWAN BENCANA</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="left" valign=top><font face="Arial" color="#000000">PENYUSUNAN KAJIAN RISIKO BENCANA </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=middle><font face="Arial" color="#000000">Penyediaan tenaga ahli yang kompeten dalam penyusunan KRB</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=middle><font face="Arial" color="#000000">BPBD</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=top><font face="Arial" color="#000000">Dokumen KRB</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font face="Arial" color="#000000">Paket</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 1 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="350000" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 350,000 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 1 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="325000" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 325,000 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;0%"><font face="Arial" color="#000000">100%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.928571428571429" sdnum="1033;0;0%"><font face="Arial" color="#000000">93%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#FF0000" sdnum="1033;0;0%"><font face="Arial" color="#000000"><br></font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.6" sdnum="1033;0;0%"><font face="Arial" color="#000000">60%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.642857142857143" sdnum="1033;0;0%"><font face="Arial" color="#000000">64%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle sdval="0.632380952380952" sdnum="1033;0;0%"><font face="Arial" color="#000000">63%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.5" sdnum="1033;0;0%"><font face="Arial" color="#000000">50%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle sdval="0.59" sdnum="1033;0;0%"><font face="Arial" color="#000000">59%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> APBN </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> BELUM ADA </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> BELUM ADA </font></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                height="19" align="center" valign=middle bgcolor="#EDEDED" sdval="1"
+                                                sdnum="1033;"><i>
+                                                    <font face="Arial" color="#000000">1</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="2" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">2</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="3" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">3</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="4" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">4</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="5" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">5</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="6" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">6</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="7" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">7</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="8" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">8</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="9" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">9</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="10" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">10</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="11" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">11</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="12" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">12</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="13" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">13</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#FF0000" sdval="14" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">14</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="15" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">15</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><i>
+                                                    <font face="Arial" color="#000000">16 = &#7818;(12+13+14)</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><i>
+                                                    <font face="Arial" color="#000000">17 = &#425;(15x16)</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><i>
+                                                    <font face="Arial" color="#000000">18 =&#7818;(12+14)</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED"><i>
+                                                    <font face="Arial" color="#000000">19 = &#425;(15x18)</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="20" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">20</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="21" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">21</font>
+                                                </i></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#EDEDED" sdval="22" sdnum="1033;">
+                                                <i>
+                                                    <font face="Arial" color="#000000">22</font>
+                                                </i></td>
                                         </tr>
                                         <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="left" valign=middle><font face="Arial" color="#000000">Diksusi Publik terhadap dokumen KRB yang telah disusun untuk disempurnakan dan ditetapkan menjadi dokumen yang sah/legal</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="left" valign=middle><font face="Arial" color="#000000">BPBD</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=top><font face="Arial" color="#000000">Legalitas Dokumen KRB</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font face="Arial" color="#000000">Paket</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 1 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="150000" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 150,000 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 1 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="150000" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 150,000 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;0%"><font face="Arial" color="#000000">100%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;0%"><font face="Arial" color="#000000">100%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#FF0000" sdnum="1033;0;0%"><font face="Arial" color="#000000"><br></font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.1" sdnum="1033;0;0%"><font face="Arial" color="#000000">10%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.666666666666667" sdnum="1033;0;0%"><font face="Arial" color="#000000">67%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.5" sdnum="1033;0;0%"><font face="Arial" color="#000000">50%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> APBN </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> BELUM ADA </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> BELUM ADA </font></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=3 height="90" align="center" valign=top>
+                                                <font face="Arial" color="#000000">1.</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=3 align="left" valign=top>
+                                                <font face="Arial" color="#000000">PELAYANAN INFORMASI RAWAN BENCANA
+                                                </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=3 align="left" valign=top>
+                                                <font face="Arial" color="#000000">PENYUSUNAN KAJIAN RISIKO BENCANA
+                                                </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=middle>
+                                                <font face="Arial" color="#000000">Penyediaan tenaga ahli yang kompeten
+                                                    dalam penyusunan KRB</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=middle>
+                                                <font face="Arial" color="#000000">BPBD</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Dokumen KRB</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle>
+                                                <font face="Arial" color="#000000">Paket</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 1 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="350000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 350,000 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 1 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="325000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 325,000 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">100%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.928571428571429"
+                                                sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">93%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#FF0000" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.6" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">60%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.642857142857143"
+                                                sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">64%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=3 align="center" valign=middle sdval="0.632380952380952"
+                                                sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">63%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.5" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">50%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=3 align="center" valign=middle sdval="0.59" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">59%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> APBN </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> BELUM ADA </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> BELUM ADA </font>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=top><font face="Arial" color="#000000">Laporan Efektivitas Pemanfaatan KRB</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font face="Arial" color="#000000">Paket</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 1 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="125000" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 125,000 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 1 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="125000" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 125,000 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;0%"><font face="Arial" color="#000000">100%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;0%"><font face="Arial" color="#000000">100%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#FF0000" sdnum="1033;0;0%"><font face="Arial" color="#000000"><br></font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.3" sdnum="1033;0;0%"><font face="Arial" color="#000000">30%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.6" sdnum="1033;0;0%"><font face="Arial" color="#000000">60%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.8" sdnum="1033;0;0%"><font face="Arial" color="#000000">80%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> APBN </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> BELUM ADA </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> BELUM ADA </font></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="left" valign=middle>
+                                                <font face="Arial" color="#000000">Diksusi Publik terhadap dokumen KRB
+                                                    yang telah disusun untuk disempurnakan dan ditetapkan menjadi
+                                                    dokumen yang sah/legal</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="left" valign=middle>
+                                                <font face="Arial" color="#000000">BPBD</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Legalitas Dokumen KRB</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle>
+                                                <font face="Arial" color="#000000">Paket</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 1 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="150000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 150,000 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 1 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="150000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 150,000 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">100%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">100%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#FF0000" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">10%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.666666666666667"
+                                                sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">67%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.5" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">50%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> APBN </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> BELUM ADA </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> BELUM ADA </font>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=6 height="179" align="center" valign=top><font face="Arial" color="#000000">2.</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=6 align="left" valign=top><font face="Arial" color="#000000">PELAYANAN PENCEGAHAN DAN KESIAPSIAGAAN TERHADAP BENCANA</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="left" valign=top><font face="Arial" color="#000000">PENYUSUNAN RENCANA PENANGGULANGAN BENCANA</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=middle><font face="Arial" color="#000000">Penyediaan Tenaga Ahli yang Kompeten dalam Penyusunan Dokumen RPB</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=middle><font face="Arial" color="#000000">BPBD</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=top><font face="Arial" color="#000000">Dokumen RPB</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font face="Arial" color="#000000">Paket</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="3" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 3 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="200000" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 200,000 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="3" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 3 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="200000" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 200,000 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;0%"><font face="Arial" color="#000000">100%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;0%"><font face="Arial" color="#000000">100%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#FF0000" sdnum="1033;0;0%"><font face="Arial" color="#000000"><br></font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.6" sdnum="1033;0;0%"><font face="Arial" color="#000000">60%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.666666666666667" sdnum="1033;0;0%"><font face="Arial" color="#000000">67%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle sdval="0.637777777777778" sdnum="1033;0;0%"><font face="Arial" color="#000000">64%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.5" sdnum="1033;0;0%"><font face="Arial" color="#000000">50%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle sdval="0.59" sdnum="1033;0;0%"><font face="Arial" color="#000000">59%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> APBN </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> BELUM ADA </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> BELUM ADA </font></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Laporan Efektivitas Pemanfaatan KRB
+                                                </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle>
+                                                <font face="Arial" color="#000000">Paket</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 1 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="125000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 125,000 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 1 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="125000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 125,000 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">100%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">100%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#FF0000" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.3" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">30%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.6" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">60%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.8" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">80%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> APBN </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> BELUM ADA </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> BELUM ADA </font>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="left" valign=middle><font face="Arial" color="#000000">Diskusi Publik terhadap dokumen RPB yang sudah disusun untuk disempurnakan dan ditetapkan menjadi dokumen yang sah/legal</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="left" valign=middle><font face="Arial" color="#000000">BPBD</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=top><font face="Arial" color="#000000">Legalitas Dokumen RPB</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font face="Arial" color="#000000">Paket</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 1 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="75000" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 75,000 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 1 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="55000" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 55,000 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;0%"><font face="Arial" color="#000000">100%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.733333333333333" sdnum="1033;0;0%"><font face="Arial" color="#000000">73%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#FF0000" sdnum="1033;0;0%"><font face="Arial" color="#000000"><br></font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.1" sdnum="1033;0;0%"><font face="Arial" color="#000000">10%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.577777777777778" sdnum="1033;0;0%"><font face="Arial" color="#000000">58%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.5" sdnum="1033;0;0%"><font face="Arial" color="#000000">50%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> APBN </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> BELUM ADA </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> BELUM ADA </font></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=6 height="179" align="center" valign=top>
+                                                <font face="Arial" color="#000000">2.</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=6 align="left" valign=top>
+                                                <font face="Arial" color="#000000">PELAYANAN PENCEGAHAN DAN
+                                                    KESIAPSIAGAAN TERHADAP BENCANA</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=3 align="left" valign=top>
+                                                <font face="Arial" color="#000000">PENYUSUNAN RENCANA PENANGGULANGAN
+                                                    BENCANA</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=middle>
+                                                <font face="Arial" color="#000000">Penyediaan Tenaga Ahli yang Kompeten
+                                                    dalam Penyusunan Dokumen RPB</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=middle>
+                                                <font face="Arial" color="#000000">BPBD</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Dokumen RPB</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle>
+                                                <font face="Arial" color="#000000">Paket</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="3"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 3 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="200000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 200,000 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="3"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 3 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="200000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 200,000 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">100%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">100%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#FF0000" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.6" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">60%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.666666666666667"
+                                                sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">67%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=3 align="center" valign=middle sdval="0.637777777777778"
+                                                sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">64%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.5" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">50%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=3 align="center" valign=middle sdval="0.59" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">59%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> APBN </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> BELUM ADA </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> BELUM ADA </font>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=top><font face="Arial" color="#000000">Laporan Efektivitas Pemanfaatan RPB</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font face="Arial" color="#000000">Paket</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 1 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="80000" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 80,000 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 1 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="80000" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 80,000 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;0%"><font face="Arial" color="#000000">100%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;0%"><font face="Arial" color="#000000">100%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#FF0000" sdnum="1033;0;0%"><font face="Arial" color="#000000"><br></font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.3" sdnum="1033;0;0%"><font face="Arial" color="#000000">30%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.6" sdnum="1033;0;0%"><font face="Arial" color="#000000">60%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.8" sdnum="1033;0;0%"><font face="Arial" color="#000000">80%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> APBN </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> BELUM ADA </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> BELUM ADA </font></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="left" valign=middle>
+                                                <font face="Arial" color="#000000">Diskusi Publik terhadap dokumen RPB
+                                                    yang sudah disusun untuk disempurnakan dan ditetapkan menjadi
+                                                    dokumen yang sah/legal</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="left" valign=middle>
+                                                <font face="Arial" color="#000000">BPBD</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Legalitas Dokumen RPB</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle>
+                                                <font face="Arial" color="#000000">Paket</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 1 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="75000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 75,000 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 1 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="55000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 55,000 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">100%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.733333333333333"
+                                                sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">73%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#FF0000" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">10%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.577777777777778"
+                                                sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">58%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.5" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">50%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> APBN </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> BELUM ADA </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> BELUM ADA </font>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="left" valign=top><font face="Arial" color="#000000">PEMBUATAN RENCANA KONTINJENSI (RENKON)</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=middle><font face="Arial" color="#000000">Penyediaan Tenaga Ahli yang Kompeten dalam Penyusunan Dokumen Rencana Kontinjensi</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=middle><font face="Arial" color="#000000">BPBD</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=top><font face="Arial" color="#000000">Dokumen Renkon</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font face="Arial" color="#000000">Paket</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="3" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 3 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="200000" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 200,000 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="3" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 3 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="200000" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 200,000 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;0%"><font face="Arial" color="#000000">100%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;0%"><font face="Arial" color="#000000">100%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#FF0000" sdval="1" sdnum="1033;0;0%"><font face="Arial" color="#000000">100%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.6" sdnum="1033;0;0%"><font face="Arial" color="#000000">60%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;0%"><font face="Arial" color="#000000">100%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle sdval="0.876666666666667" sdnum="1033;0;0%"><font face="Arial" color="#000000">88%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;0%"><font face="Arial" color="#000000">100%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=3 align="center" valign=middle sdval="0.94" sdnum="1033;0;0%"><font face="Arial" color="#000000">94%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> APBN </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> BELUM ADA </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> BELUM ADA </font></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Laporan Efektivitas Pemanfaatan RPB
+                                                </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle>
+                                                <font face="Arial" color="#000000">Paket</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 1 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="80000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 80,000 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 1 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="80000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 80,000 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">100%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">100%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#FF0000" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.3" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">30%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.6" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">60%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.8" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">80%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> APBN </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> BELUM ADA </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> BELUM ADA </font>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="left" valign=middle><font face="Arial" color="#000000">Diskusi Publik terhadap Dokumen Rencana Kontinjensi yang sudah disusun untuk disempurnakan dan ditetapkan menjadi dokumen yang sah/legal</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" rowspan=2 align="left" valign=middle><font face="Arial" color="#000000">BPBD</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=top><font face="Arial" color="#000000">Legalitas Dokumen Renkon</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font face="Arial" color="#000000">Paket</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 1 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="50000" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 50,000 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 1 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="45000" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 45,000 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;0%"><font face="Arial" color="#000000">100%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.9" sdnum="1033;0;0%"><font face="Arial" color="#000000">90%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#FF0000" sdval="1" sdnum="1033;0;0%"><font face="Arial" color="#000000">100%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.1" sdnum="1033;0;0%"><font face="Arial" color="#000000">10%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.966666666666667" sdnum="1033;0;0%"><font face="Arial" color="#000000">97%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;0%"><font face="Arial" color="#000000">100%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> APBN </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> BELUM ADA </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> BELUM ADA </font></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=3 align="left" valign=top>
+                                                <font face="Arial" color="#000000">PEMBUATAN RENCANA KONTINJENSI
+                                                    (RENKON)</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=middle>
+                                                <font face="Arial" color="#000000">Penyediaan Tenaga Ahli yang Kompeten
+                                                    dalam Penyusunan Dokumen Rencana Kontinjensi</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=middle>
+                                                <font face="Arial" color="#000000">BPBD</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Dokumen Renkon</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle>
+                                                <font face="Arial" color="#000000">Paket</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="3"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 3 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="200000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 200,000 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="3"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 3 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="200000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 200,000 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">100%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">100%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#FF0000" sdval="1"
+                                                sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">100%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.6" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">60%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">100%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=3 align="center" valign=middle sdval="0.876666666666667"
+                                                sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">88%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">100%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=3 align="center" valign=middle sdval="0.94" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">94%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> APBN </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> BELUM ADA </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> BELUM ADA </font>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="left" valign=top><font face="Arial" color="#000000">Laporan Efektivitas Pemanfaatan Renkon</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle><font face="Arial" color="#000000">Paket</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 1 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="50000" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 50,000 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 1 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="50000" sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> 50,000 </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;0%"><font face="Arial" color="#000000">100%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="1" sdnum="1033;0;0%"><font face="Arial" color="#000000">100%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle bgcolor="#FF0000" sdnum="1033;0;0%"><font face="Arial" color="#000000"><br></font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.3" sdnum="1033;0;0%"><font face="Arial" color="#000000">30%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.6" sdnum="1033;0;0%"><font face="Arial" color="#000000">60%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdval="0.8" sdnum="1033;0;0%"><font face="Arial" color="#000000">80%</font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> APBN </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> BELUM ADA </font></td>
-                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000" align="center" valign=middle sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)"><font face="Arial" color="#000000"> BELUM ADA </font></td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="left" valign=middle>
+                                                <font face="Arial" color="#000000">Diskusi Publik terhadap Dokumen
+                                                    Rencana Kontinjensi yang sudah disusun untuk disempurnakan dan
+                                                    ditetapkan menjadi dokumen yang sah/legal</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                rowspan=2 align="left" valign=middle>
+                                                <font face="Arial" color="#000000">BPBD</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Legalitas Dokumen Renkon</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle>
+                                                <font face="Arial" color="#000000">Paket</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 1 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="50000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 50,000 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 1 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="45000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 45,000 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">100%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.9" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">90%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#FF0000" sdval="1"
+                                                sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">100%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">10%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.966666666666667"
+                                                sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">97%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">100%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> APBN </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> BELUM ADA </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> BELUM ADA </font>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="left" valign=top>
+                                                <font face="Arial" color="#000000">Laporan Efektivitas Pemanfaatan
+                                                    Renkon</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle>
+                                                <font face="Arial" color="#000000">Paket</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 1 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="50000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 50,000 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 1 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="50000"
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> 50,000 </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">100%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="1" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">100%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle bgcolor="#FF0000" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000"><br></font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.3" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">30%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.6" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">60%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle sdval="0.8" sdnum="1033;0;0%">
+                                                <font face="Arial" color="#000000">80%</font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> APBN </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> BELUM ADA </font>
+                                            </td>
+                                            <td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000"
+                                                align="center" valign=middle
+                                                sdnum="1033;0;_(* #,##0_);_(* \(#,##0\);_(* -??_);_(@_)">
+                                                <font face="Arial" color="#000000"> BELUM ADA </font>
+                                            </td>
                                         </tr>
                                     </table>
                                 </div>
