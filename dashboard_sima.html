@@ -23,12 +23,11 @@
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
                         <div class="dropdown profile-element"> <span>
-                                <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                                <img alt="image" class="img-circle" src="img/user_icon.jpg" />
                             </span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Sugeng
-                                            Warsono</strong>
-                                    </span> <span class="text-muted text-xs block">Staff Administrasi BPBD DKI Jakarta
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Admin</strong>
+                                    </span> <span class="text-muted text-xs block">
                                         <b class="caret"></b></span> </span> </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
                                 <li><a href="profile.html">Profile</a></li>
@@ -252,7 +251,7 @@
                     <div class="col-md-12">
                         <div class="ibox float-e-margins">
                             <div class="ibox-content">
-                                <h2>Selamat Datang Sugeng Warsono</h2>
+                                <h2>Selamat Datang Admin</h2>
                                 <small>Hari Senin, 17 Oktober 2022 </br>
                                     09.10 WIB
                                 </small>
@@ -336,7 +335,7 @@
                                 <div class="m-t-md">
                                     <small class="pull-right">
                                         <i class="fa fa-clock-o"> </i>
-                                        Update on 16.07.2022
+                                        Update on 17.10.2022
                                     </small>
                                     <small>
                                         <strong>Sumber data:</strong> DITJEN DUKCAPIL KEMENDAGRI.
@@ -377,6 +376,63 @@
                         </div>
                     </div>
 
+                    <div class="col-lg-4">
+                        <div class="ibox">
+                            <div class="ibox-content">
+                                <h5>PELAYANAN INFORMASI RAWAN BENCANA</h5>
+                                <h2>80%</h2>
+                                <div class="progress progress-mini">
+                                    <div style="width: 80%;" class="progress-bar progress-bar"></div>
+                                </div>
+
+                                <div class="m-t-sm small">Update on 17.10.2022</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="ibox">
+                            <div class="ibox-content">
+                                <h5>PELAYANAN PENCEGAHAN DAN KESIAPSIAGAAN</h5>
+                                <h2>60%</h2>
+                                <div class="progress progress-mini">
+                                    <div style="width: 60%;" class="progress-bar progress-bar-warning"></div>
+                                </div>
+
+                                <div class="m-t-sm small">Update on 17.10.2022</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="ibox">
+                            <div class="ibox-content">
+                                <h5>PELAYANAN PENYELAMATAN DAN EVAKUASI</h5>
+                                <h2>15%</h2>
+                                <div class="progress progress-mini">
+                                    <div style="width: 15%;" class="progress-bar progress-bar-danger"></div>
+                                </div>
+
+                                <div class="m-t-sm small">Update on 17.10.2022</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox float-e-margins">
+                                <div class="ibox-title">
+                                    <h5>PELAYANAN INFORMASI RAWAN BENCANA</h5>
+                                </div>
+                                <div class="ibox-content">
+                                    <div class="doughnut-chart-container">
+                                        <canvas id="doughnut-chartcanvas-PELAYANAN-INFORMASI-RAWAN-BENCANA" height="200"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -410,40 +466,6 @@
 
     <script>
         $(document).ready(function () {
-            var doughnutData = {
-                labels: ["PNS", "TNI", "POLRI", "SATLINMAS", "TENAGA KONTRAK", "NON APARATUR"],
-                datasets: [{
-                    data: [300, 50, 100, 124, 12, 111],
-                    backgroundColor: ["#a3e1d4", "#dedede", "#b5b8cf", "#3373FF", "#9A33FF", "#FF33C7"]
-                }]
-            };
-
-
-            var doughnutOptions = {
-                responsive: true
-            };
-
-            var ctx4 = document.getElementById("doughnutChart").getContext("2d");
-            new Chart(ctx4, { type: 'doughnut', data: doughnutData, options: doughnutOptions });
-
-            var doughnutData_1 = {
-                labels: ["GEMPA BUMI", "TSUNAMI", "BANJIR", "TANAH LONGSOR", "LETUSAN GUNUNG API", "GELOMBANG LAUT EKSTRIM", "ANGIN TOPAN", "KEKERINGAN", "KEBAKARAN HUTAN DAN LAHAN", "EPIDEMI DAN WABAH"],
-                datasets: [{
-                    data: [300, 50, 100, 124, 12, 111],
-                    backgroundColor: ["#a3e1d4", "#dedede", "#b5b8cf", "#3373FF", "#9A33FF", "#FF33C7", "#424F46", "#E4E72E", "#A70122", "#01A1A7"]
-                }]
-            };
-
-
-            var doughnutOptions_1 = {
-                responsive: true
-            };
-
-            var ctx4_1 = document.getElementById("doughnutChart_KK_rawan_bencana").getContext("2d");
-            new Chart(ctx4_1, { type: 'doughnut', data: doughnutData_1, options: doughnutOptions_1 });
-
-
-
         });
     </script>
 </body>

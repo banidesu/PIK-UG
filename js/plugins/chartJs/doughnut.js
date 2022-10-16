@@ -24,26 +24,28 @@ $(function(){
 
     //doughnut chart data
     var data2 = {
-        labels: ["match1", "match2", "match3", "match4", "match5"],
+        labels: ["Jakarta Timur", "Jakarta Selatan", "Jakarta Barat", "Jakarta Utara", "Jakarta Pusat", "Kepulauan Seribu"],
         datasets: [
             {
-                label: "TeamB Score",
-                data: [20, 35, 40, 60, 50],
+                label: "",
+                data: [20, 35, 40, 60, 50, 50],
                 backgroundColor: [
                     "#FAEBD7",
                     "#DCDCDC",
                     "#E9967A",
                     "#F5DEB3",
-                    "#9ACD32"
+                    "#9ACD32",
+                    "#FF33C7"
                 ],
                 borderColor: [
                     "#E9DAC6",
                     "#CBCBCB",
                     "#D88569",
                     "#E4CDA2",
-                    "#89BC21"
+                    "#89BC21",
+                    "#E4CDA2"
                 ],
-                borderWidth: [1, 1, 1, 1, 1]
+                borderWidth: [1, 1, 1, 1, 1, 1]
             }
         ]
     };
@@ -54,8 +56,8 @@ $(function(){
         title: {
             display: true,
             position: "top",
-            text: "Doughnut Chart",
-            fontSize: 18,
+            text: "",
+            fontSize: 12,
             fontColor: "#111"
         },
         legend: {
@@ -63,7 +65,7 @@ $(function(){
             position: "bottom",
             labels: {
                 fontColor: "#333",
-                fontSize: 16
+                fontSize: 12
             }
         }
     };
