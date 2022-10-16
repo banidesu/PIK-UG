@@ -4,9 +4,11 @@ $(function(){
     var ctx1 = $("#doughnut-chartcanvas-1");
     var ctx2 = $("#doughnut-chartcanvas-2");
 
+    var ctx3 = $("#doughnut-chartcanvas-3");
+
     //doughnut chart data
     var data1 = {
-        labels: ["PNS","TNI","POLRI","SATLINMAS","TENAGA KONTRAK","NON APARATUR"],
+        labels: ["PNS: 300","TNI: 50","POLRI: 100","SATLINMAS: 124","TENAGA KONTRAK: 12","NON APARATUR: 111"],
         datasets: [
             {
                 label: "",
@@ -24,7 +26,7 @@ $(function(){
 
     //doughnut chart data
     var data2 = {
-        labels: ["Jakarta Timur", "Jakarta Selatan", "Jakarta Barat", "Jakarta Utara", "Jakarta Pusat", "Kepulauan Seribu"],
+        labels: ["Jakarta Timur: 20", "Jakarta Selatan: 35", "Jakarta Barat: 40", "Jakarta Utara: 60", "Jakarta Pusat: 50", "Kepulauan Seribu: 50"],
         datasets: [
             {
                 label: "",
@@ -46,6 +48,25 @@ $(function(){
                     "#E4CDA2"
                 ],
                 borderWidth: [1, 1, 1, 1, 1, 1]
+            }
+        ]
+    };
+
+    var data3 = {
+        labels: ["PENYUSUNAN KAJIAN RISIKO BENCANA: 80%", "KOMUNIKASI, INFORMASI </br> DAN EDUKASI RAWAN BENCANA: 80%"],
+        datasets: [
+            {
+                label: "",
+                data: [80, 80],
+                backgroundColor: [
+                    "#FAEBD7",
+                    "#E9967A"
+                ],
+                borderColor: [
+                    "#E9DAC6",
+                    "#CBCBCB"
+                ],
+                borderWidth: [1, 1]
             }
         ]
     };
@@ -81,6 +102,12 @@ $(function(){
     var chart2 = new Chart(ctx2, {
         type: "doughnut",
         data: data2,
+        options: options
+    });
+
+    var chart3 = new Chart(ctx3, {
+        type: "doughnut",
+        data: data3,
         options: options
     });
 });
