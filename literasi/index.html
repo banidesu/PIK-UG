@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Literasi Bencana Indonesia</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body id="home">
+
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-secondary">
+        <div class="container">
+            <a class="navbar-brand d-flex gap-2 align-items-center" href="#">
+                <img src="assets/img/bpbd.png" alt="Logo BPBD" width="50">
+                <span class="fw-semibold h3">BPBD</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link" href="#jenis-bencana">Jenis Bencana</a>
+                    <a class="nav-link" href="#peta-risiko-bencana">Peta Risiko Bencana</a>
+                    <a class="nav-link" href="#kesiapsiagaan">Kesiapsiagaan</a>
+                    <a class="nav-link" href="#edukasi-interaktif">Edukasi Interaktif</a>
+                    <a class="nav-link" href="#peristiwa">Peristiwa</a>
+                    <a class="nav-link" href="#informasi-bencana-terkini">Informasi Bencana Terkini</a>
+                    <a class="nav-link" href="#bantuan">Bantuan</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/caraosel/1.jpg" class="d-block w-100" alt="gambar-1"
+                        style="filter: brightness(50%);">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Pemkab Bekasi Gerak Cepat Beri Bantuan Korban Puting Beliung di Desa Pasirtanjung</h5>
+                        <p>Pemerintah Kabupaten Bekasi menyalurkan bantuan kepada masyarakat Kampung Cilampayan Pasir,
+                            Desa Pasir Tanjung, Cikarang
+                            Pusat, yang terdampak terjangan angin puting beliung pada Sabtu (17/12) yang mengakibatkan
+                            puluhan rumah rusak dan
+                            seorang warga usia 80 tahun dilarikan ke rumah sakit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/caraosel/2.jpg" class="d-block w-100" alt="gambar-2"
+                        style="filter: brightness(50%);">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Tinggi muka air di Pos Pantau Depok naik jadi Siaga 2</h5>
+                        <p>Badan Penanggulangan Bencana Daerah (BPBD) DKI Jakarta melaporkan tinggi muka air di Pos
+                            Pantau Depok naik menjadi
+                            setinggi 305 cm atau memasuki status Siaga 2 pada Rabu pukul 23.00 WIB.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/caraosel/3.jpg" class="d-block w-100" alt="gambar-3"
+                        style="filter: brightness(50%);">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Pemkab Cirebon dan BPBD Siapkan Strategi Antisipasi Banjir di Musim Hujan</h5>
+                        <p>Penjabat (Pj) Bupati Cirebon, Wahyu Mijaya menghadiri rapat koordinasi terkait tindak lanjut
+                            bencana banjir bersama
+                            Badan Penanggulangan Bencana Daerah (BPBD) Jawa Barat, Jumat (2/8/2024).</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <section id="jenis-bencana" class="py-5 bg-body-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="my-5 display-6 fw-bolder">
+                        Jenis Bencana Alam di Indonesia
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="assets/img/jenis-bencana-alam/angin-topan.jpeg" alt="angin-topan"
+                                class="img-thumbnail">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Angin Topan</h3>
+                            <p class="lead">Angin topan dapat menyebabkan kerusakan serius pada bangunan dan
+                                infrastruktur, terutama
+                                di kawasan pesisir. Puting beliung adalah angin kencang yang terjadi dalam skala lokal.
+                                Bencana ini bisa terjadi di berbagai wilayah di
+                                Indonesia, terutama pada musim peralihan atau pancaroba.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Banjir Bandang</h3>
+                            <p class="lead">Banjir merupakan peristiwa ketika air menggenangi suatu wilayah yang
+                                biasanya tidak digenangi air dalam jangka waktu
+                                tertentu. Banjir biasanya terjadi karena curah hujan turun terus menerus dan
+                                mengakibatkan meluapnya air sungai, danau,
+                                laut atau drainase karena jumlah air yang melebihi daya tampung media penopang air dari
+                                curah hujan tadi.Selain disebabkan faktor alami, yaitu curah hujan yang tinggi, banjir
+                                juga terjadi karena ulah manusia. Contoh,
+                                berkurangnya kawasan resapan air karena alih fungsi lahan, penggundulan hutan yang
+                                meningkatkan erosi dan mendangkalkan
+                                sungai, serta perilaku tidak bertanggung jawab seperti membuang sampah di sungai dan
+                                mendirikan hunian di bantaran
+                                sungai.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="assets/img/jenis-bencana-alam/banjir.jpg" alt="banjir" class="img-thumbnail">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="assets/img/jenis-bencana-alam/gempa.jpg" alt="gempa" class="img-thumbnail">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Gempa Bumi</h3>
+                            <p class="lead">Seperti yang telah disebutkan di atas, Indonesia merupakan daerah rawan
+                                gempa bumi karena
+                                terletak di Cincin Api
+                                Pasifik. Gempa kerap menyebabkan kerusakan bangunan, jembatan, dan jalan serta
+                                menimbulkan korban jiwa. Gempa bumi sering terjadi di Indonesia karena pergerakan
+                                lempeng tektonik di wilayah ini, termasuk Lempeng Eurasia,
+                                Lempeng Indo-Australia, dan Lempeng Pasifik. Beberapa gempa bahkan berpotensi
+                                menimbulkan tsunami, seperti yang terjadi
+                                di Aceh pada 2004.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Gunung Meletus</h3>
+                            <p class="lead">Indonesia memiliki banyak gunung berapi aktif yang secara periodik meletus.
+                                Letusan
+                                gunung berapi dapat menyebabkan
+                                hujan abu, lahar, dan bahkan mengakibatkan evakuasi massal. Indonesia memiliki banyak
+                                gunung berapi aktif, sehingga letusan gunung berapi cukup sering terjadi. Beberapa
+                                gunung
+                                berapi aktif yang terkenal di Indonesia antara lain Gunung Merapi, Gunung Sinabung, dan
+                                Gunung Krakatau.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="assets/img/jenis-bencana-alam/gunung-meletus.jpeg" alt="gunung-meletus"
+                                class="img-thumbnail">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="assets/img/jenis-bencana-alam/kekeringan.jpg" alt="kekeringan"
+                                class="img-thumbnail">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Kekeringan</h3>
+                            <p class="lead">Musim kemarau yang panjang dapat menyebabkan kekeringan di beberapa wilayah
+                                Indonesia.
+                                Kekeringan dapat mengakibatkan
+                                krisis air bersih dan kelaparan. Kekeringan dapat terjadi pada musim kemarau panjang,
+                                yang berdampak pada penurunan ketersediaan air bersih dan kegagalan
+                                panen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Tanah Longsor</h3>
+                            <p class="lead">Curah hujan yang tinggi menyebabkan tanah tidak stabil dan dapat menyebabkan
+                                longsor.
+                                Longsor sering menyebabkan
+                                kerusakan pada pemukiman dan infrastruktur serta menimbulkan korban jiwa. Tanah longsor
+                                biasanya terjadi di daerah perbukitan atau pegunungan yang terjal, terutama saat musim
+                                hujan.
+                                Daerah-daerah dengan tingkat kerentanan tinggi terhadap longsor biasanya memiliki
+                                vegetasi yang sudah terganggu atau
+                                rusak.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="assets/img/jenis-bencana-alam/longsor.jpg" alt="longsor" class="img-thumbnail">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="assets/img/jenis-bencana-alam/tsunami.jpg" alt="tsunami" class="img-thumbnail">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Tsunami</h3>
+                            <p class="lead">Tsunami terdiri dari rangkaian gelombang laut yang mampu menjalar dengan
+                                kecepatan mencapai lebih dari 900 km/jam atau
+                                lebih. Jenis bencana ini disebabkan oleh beberapa faktor,antara lain gempa bumi yang
+                                terjadi di dasar laut, runtuhan di
+                                pantai, atau karena letusan gunungapi di laut.Saat mencapai pantai yang dangkal, teluk,
+                                atau muara sungai, kecepatan gelombang tsunami akan menurun, namun ketinggian
+                                gelombang akan meningkat puluhan meter dan bersifat merusak.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="peta-risiko-bencana" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="my-5 display-6 fw-bolder">
+                        Peta Risiko Bencana di Indonesia
+                    </div>
+                    <p class="my-5">Peta risiko bencana alam adalah representasi visual yang menunjukkan tingkat risiko
+                        atau potensi bahaya dari berbagai
+                        jenis bencana alam di suatu wilayah tertentu. Peta ini digunakan untuk mengidentifikasi daerah
+                        rawan bencana, membantu
+                        perencanaan mitigasi, dan mendukung pengambilan keputusan dalam manajemen risiko.</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16328182.407026477!2d107.22363137743316!3d-2.3813799392726556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c4c07d7496404b7%3A0xe37b4de71badf485!2sIndonesia!5e0!3m2!1sid!2sid!4v1731885675838!5m2!1sid!2sid"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-6 col-md-2 mt-4">
+                    <div class="card border-info">
+                        <div class="card-body">
+                            <h5 class="card-title">Bencana</h5>
+                            <p class="card-text">1270</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 mt-4">
+                    <div class="card border-info">
+                        <div class="card-body">
+                            <h5 class="card-title">Meninggal</h5>
+                            <p class="card-text">391</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 mt-4">
+                    <div class="card border-info">
+                        <div class="card-body">
+                            <h5 class="card-title">Hilang</h5>
+                            <p class="card-text">54</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 mt-4">
+                    <div class="card border-info">
+                        <div class="card-body">
+                            <h5 class="card-title">Terluka</h5>
+                            <p class="card-text">674</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 mt-4">
+                    <div class="card border-info">
+                        <div class="card-body">
+                            <h5 class="card-title">Menderita</h5>
+                            <p class="card-text">3,545,359</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 mt-4">
+                    <div class="card border-info">
+                        <div class="card-body">
+                            <h5 class="card-title">Mengungsi</h5>
+                            <p class="card-text">318,933</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 mt-4">
+                    <div class="card border-info">
+                        <div class="card-body">
+                            <h5 class="card-title">Rumah</h5>
+                            <p class="card-text">38,900</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 mt-4">
+                    <div class="card border-info">
+                        <div class="card-body">
+                            <h5 class="card-title">Pendidikan</h5>
+                            <p class="card-text">500</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 mt-4">
+                    <div class="card border-info">
+                        <div class="card-body">
+                            <h5 class="card-title">Kesehatan</h5>
+                            <p class="card-text">57</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 mt-4">
+                    <div class="card border-info">
+                        <div class="card-body">
+                            <h5 class="card-title">Peribadatan</h5>
+                            <p class="card-text">363</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 mt-4">
+                    <div class="card border-info">
+                        <div class="card-body">
+                            <h5 class="card-title">Fasum</h5>
+                            <p class="card-text">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kesiapsiagaan" class="py-5 bg-body-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="my-5 display-6 fw-bolder">
+                        Kesiapsiagaan
+                    </div>
+                    <p class="my-5">Dalam menghadapi ancaman bencana, kesiapsiagaan menjadi kunci keselamatan Anda.
+                        Kesiapsiagaan merupakan serangkaian
+                        kegiatan yang dilakukan untuk mengantisipasi bencana melalui pengorganisasian serta melalui
+                        langkah yang tepat guna dan
+                        berdaya guna. Bencana sering terjadi tanpa peringatan sehingga Anda membutuhkan pengetahuan dan
+                        keterampilan untuk menghadapinya.
+                        Salah satu kebutuhan yang diperlukan untuk menghadapi bencana adalah rencana kesiapsiagaan. Tiga
+                        upaya utama dalam
+                        menyusun rencana kesiapsiagaan menghadapi bencana.</p>
+                    <div class="accordion text-start" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    Miliki sebuah rencana darurat keluarga. Rencana ini mencakup:
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <ol class="list-group list-group-numbered">
+                                        <li class="list-group-item">Analisis ancaman di sekitar</li>
+                                        <li class="list-group-item">Identifikasi titik kumpul.</li>
+                                        <li class="list-group-item">Nomor kontak penting.</li>
+                                        <li class="list-group-item">Ketahui rute evakuasi.</li>
+                                        <li class="list-group-item">Identifikasi titik aman di dalam bangunan atau
+                                            rumah.</li>
+                                        <li class="list-group-item">Identifikasi anggota keluarga yang rentan
+                                            (anak-anak, lanjut usia, ibu hamil, dan penyandang disabilitas).</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    TAS SIAGA BENCANA (TSB)
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Tas Siaga Bencana (TSB) merupakan tas tahan air (water proof) yang dipersiapkan
+                                    anggota keluarga untuk berjaga-jaga
+                                    apabila terjadi suatu bencana atau kondisi darurat lain. Tujuan TSB sebagai
+                                    persiapan untuk bertahan hidup saat bantuan
+                                    belum datang dan memudahkan kita saat evakuasi menuju tempat aman.
+                                    <img src="../img/bnbp_tsb.png" alt="TSB BNBP" class="img-thumbnail mt-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    Menyimak informasi dari berbagai media, seperti radio, televisi, media online,
+                                    maupun sumber lain yang resmi.
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <p>Anda dapat memperoleh informasi resmi terhadap penanganan darurat dari BPBD,
+                                        BNPB, dan kementerian/lembaga terkait.
+                                        Apabila sudah terbentuk posko, informasi lanjutan akan diberikan oleh posko
+                                        setempat.</p>
+                                    <p>Berikut ini beberapa daftar untuk melihat upaya perlindungan yang perlu Anda
+                                        kenali.</p>
+                                    <ol class="list-group list-group-numbered">
+                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                            <div class="ms-2 me-auto">
+                                                <div class="fw-bold">Kaji situasi</div>
+                                                Identifikasi tipe bencana dan kondisi sekitar Anda
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                            <div class="ms-2 me-auto">
+                                                <div class="fw-bold">Putuskan untuk tinggal atau berpindah tempat</div>
+                                                Dalam beberapa
+                                                situasi, Anda mungkin harus tetap diam dan di situasi lain Anda harus
+                                                berpindah tempat.
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                            <div class="ms-2 me-auto">
+                                                <div class="fw-bold">Tinggal atau berpindah tempat adalah keputusan
+                                                    penting dalam
+                                                    bencana</div>
+                                                Apabila Anda tidak dalam kondisi bahaya, Anda harus tetap tinggal dan
+                                                berupaya untuk mendapatkan informasi situasi
+                                                terkini. Apabila Anda harus berpindah, buatlah keputusan secara cepat.
+                                                Sangat penting untuk mendengarkan pemerintah
+                                                setempat ketika ada instruksi.
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                            <div class="ms-2 me-auto">
+                                                <div class="fw-bold">Cari air bersih dan pastikan untuk dapat bernafas
+                                                </div>
+                                                Apa pun jenis bencana, udara yang baik merupakan kebutuhan yang penting.
+                                                Upayakan lindungi diri Anda dan cari udara
+                                                bersih mungkin dengan menutup mulut dengan kain atau masker.
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                            <div class="ms-2 me-auto">
+                                                <div class="fw-bold">Lindungi diri Anda dari reruntuhan dan beri sinyal
+                                                    kepada penolong</div>
+                                                Apabila Anda berada di reruntuhan, cari celah untuk bernafas. Lempar
+                                                sesuatu atau tiup peluit untuk pertolongan.
+                                                Upayakan untuk membuat suara dengan benda sekitar Anda.
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                                            <div class="ms-2 me-auto">
+                                                <div class="fw-bold">Pastikan higienitas</div>
+                                                Penting untuk memastikan air yang layak minum dan sanitasi.
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="edukasi-interaktif" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="my-5 display-6 fw-bolder">
+                        Edukasi Interaktif
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Bt2Ml5KAN8U?si=3jXzArliIZ0kPyIP"
+                        title="YouTube video player" frameborder="0" class=""
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/O6GjGUWmRmc?si=czswoOEJdGMLWQPF"
+                        title="YouTube video player" frameborder="0" class=""
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cJjL1Hal6rQ?si=lMkVlsjlJqUecVFT"
+                        title="YouTube video player" frameborder="0" class=""
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Fs2JIUM_V_E?si=U6fSRtkizVlfX4Wo"
+                        title="YouTube video player" frameborder="0" class=""
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="peristiwa" class="py-5 bg-body-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="my-5 display-6 fw-bolder">
+                        Peristiwa Bencana Alam di Indonesia
+                    </div>
+                    <p>Indonesia adalah negara yang rawan bencana alam karena letaknya di Cincin Api Pasifik, tempat
+                        pertemuan lempeng tektonik
+                        aktif. Berikut beberapa jenis bencana alam yang sering terjadi di Indonesia:
+                    </p>
+                    <div class="card mt-4 text-start">
+                        <div class="card-body">
+                            <h5 class="card-title pb-3">Gempa Bumi</h5>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Gempa Lombok (2018)</h5>
+                                            <p class="card-text">Serangkaian gempa besar mengguncang Pulau Lombok,
+                                                mengakibatkan ribuan korban jiwa dan kerusakan signifikan.</p>
+                                            <a href="#" class="card-link">Cek Selengkapnya</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Gempa Palu-Donggala (2018)</h5>
+                                            <p class="card-text">Disertai tsunami, gempa ini menghancurkan banyak
+                                                wilayah di
+                                                Sulawesi Tengah.</p>
+                                            <a href="#" class="card-link">Cek Selengkapnya</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Gempa Aceh (2004)</h5>
+                                            <p class="card-text">Salah satu bencana terbesar di dunia, gempa berkekuatan
+                                                9,1
+                                                SR memicu tsunami dahsyat yang merenggut ratusan ribu jiwa.</p>
+                                            <a href="#" class="card-link">Cek Selengkapnya</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-4 text-start">
+                        <div class="card-body">
+                            <h5 class="card-title pb-3">Tsunami</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Tsunami Selat Sunda (2018)</h5>
+                                            <p class="card-text">Disebabkan oleh longsoran bawah laut setelah erupsi
+                                                Anak
+                                                Krakatau, menghantam wilayah Banten dan Lampung.</p>
+                                            <a href="#" class="card-link">Cek Selengkapnya</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Tsunami Aceh (2004)</h5>
+                                            <p class="card-text">Menghantam beberapa negara di Samudra Hindia dengan
+                                                dampak
+                                                terbesar di Indonesia.</p>
+                                            <a href="#" class="card-link">Cek Selengkapnya</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-4 text-start">
+                        <div class="card-body">
+                            <h5 class="card-title pb-3">Letusan Gunung Berapi</h5>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Gunung Tambora (1815)</h5>
+                                            <p class="card-text">Letusan terbesar dalam sejarah modern, menyebabkan
+                                                “tahun
+                                                tanpa musim panas” di belahan bumi utara.</p>
+                                            <a href="#" class="card-link">Cek Selengkapnya</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Gunung Krakatau (1883)</h5>
+                                            <p class="card-text">Letusan dahsyat yang memicu tsunami besar dan terdengar
+                                                hingga ribuan kilometer.</p>
+                                            <a href="#" class="card-link">Cek Selengkapnya</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Erupsi Gunung Merapi</h5>
+                                            <p class="card-text">Sering terjadi dengan letusan besar pada 2010 yang
+                                                menewaskan ratusan orang.</p>
+                                            <a href="#" class="card-link">Cek Selengkapnya</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-4 text-start">
+                        <div class="card-body">
+                            <h5 class="card-title pb-3">Banjir dan Longsor</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Banjir Jakarta</h5>
+                                            <p class="card-text">Terjadi hampir setiap tahun, terutama di musim hujan,
+                                                menyebabkan gangguan besar pada aktivitas masyarakat.</p>
+                                            <a href="#" class="card-link">Cek Selengkapnya</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Longsor Banjarnegara (2014)</h5>
+                                            <p class="card-text">Longsor besar yang menimbun sebuah desa dan menyebabkan
+                                                ratusan korban jiwa.</p>
+                                            <a href="#" class="card-link">Cek Selengkapnya</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-4 text-start">
+                        <div class="card-body">
+                            <h5 class="card-title pb-3">Kekeringan</h5>
+                            <p class="card-text">Kekeringan sering terjadi di daerah Nusa Tenggara Timur dan Nusa
+                                Tenggara
+                                Barat, terutama
+                                pada musim kemarau panjang.</p>
+                            <a href="#" class="card-link">Cek Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mt-4 text-start">
+                        <div class="card-body">
+                            <h5 class="card-title pb-3">Kebakaran Hutan</h5>
+                            <p class="card-text">Kalimantan dan Sumatra: Kebakaran lahan gambut yang menyebabkan kabut
+                                asap
+                                lintas negara (haze), memengaruhi Indonesia,
+                                Malaysia, dan Singapura.</p>
+                            <a href="#" class="card-link">Cek Selengkapnya</a>
+                        </div>
+                    </div>
+                    <p class="mt-5 lead">Bencana-bencana ini sering kali memerlukan tanggapan darurat, mitigasi risiko, dan upaya
+                        pemulihan yang melibatkan
+                        pemerintah, masyarakat, serta lembaga internasional. Pemerintah melalui BNPB (Badan Nasional
+                        Penanggulangan Bencana)
+                        terus berupaya meningkatkan mitigasi bencana untuk mengurangi dampak di masa mendatang.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
